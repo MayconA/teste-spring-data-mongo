@@ -22,7 +22,7 @@ public class ClienteAPI {
 	private ClienteService servico;
 
 	@GetMapping
-	public ResponseEntity<List<Cliente>> getAll() {
+	public ResponseEntity<?> getAll() {
 
 		List<Cliente> clientes = servico.findAll();
 
